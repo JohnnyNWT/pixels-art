@@ -1,10 +1,38 @@
-#color-palette {
-    
+* {
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .color {
-    width: 80px;
-    height: 80px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
     border: 1px solid black;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+#pixel-board {
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.pixel {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
