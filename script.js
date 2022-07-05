@@ -6,6 +6,8 @@ color[3].style.backgroundColor = 'aqua';
 
 let selecionaCor = document.querySelector('#color-palette')
 let selecionaSquare = document.querySelector('#pixel-board')
+let botaoLimpar = document.getElementById('clear-board')
+let pixels = document.getElementsByClassName('pixel')
 let corSelecionada = 'black'
 
 function selectColor(event) {
@@ -14,9 +16,6 @@ function selectColor(event) {
     }
     event.target.classList.add('selected')
     corSelecionada = event.target.style.backgroundColor
-
-    console.log(event.target);
-    console.log(document.querySelectorAll('.color'))
 }
 selecionaCor.addEventListener('click', selectColor)
 
@@ -24,3 +23,10 @@ function pintar(event) {
     event.target.style.backgroundColor = corSelecionada
 }
 selecionaSquare.addEventListener('click', pintar)
+
+function limpar(event) {
+    for(let i = 0; i < pixels.length; i++) {
+        pixels[i].style.backgroundColor = 'white'
+    }
+}
+botaoLimpar.addEventListener('click', limpar)

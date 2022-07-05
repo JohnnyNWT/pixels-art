@@ -45,3 +45,9 @@ body {
 .selected {
     background-color: black;
 }
+
+#clear-board {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 13px;
+}
