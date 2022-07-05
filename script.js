@@ -24,7 +24,7 @@ function pintar(event) {
 }
 selecionaSquare.addEventListener('click', pintar)
 
-function limpar(event) {
+function limpar() {
     for(let i = 0; i < pixels.length; i++) {
         pixels[i].style.backgroundColor = 'white'
     }
