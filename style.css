@@ -11,6 +11,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#color-palette {
+    text-align: center;
+}
+
 .color {
     width: 60px;
     height: 60px;
@@ -20,18 +24,18 @@ body {
 }
 
 #pixel-board {
-    position: absolute;
     left: 22px;
-    width: 210px;
+    width: 799px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
     border: 1px solid black;
+    margin: auto;
 }
 
 .pixel {
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
     background-color: white;
     border: 1px solid black;
 }
@@ -49,5 +53,22 @@ body {
 #clear-board {
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 13px; 
+    margin-top: 13px;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    width: 95px;
+    opacity: 90%;
+}
+
+#clear-board:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#container {
+    margin-top: 20px;
+    width: 90vw;
 }

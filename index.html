@@ -1,50 +1,2386 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1 id="title">Paleta de Cores</h1>
-    <div class="center">
-        <div id="color-palette">
-            <button class="color selected" class="selected"></button>
-            <button class="color"></button>
-            <button class="color"></button>
-            <button class="color"></button>
-        </div>
-        <button id="clear-board">Limpar</button>
-        <div id="pixel-board" class="teste">
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-            <div class="pixel"></div>
-        </div>
+  <h1 id="title">Paleta de Cores</h1>
+  <div class="center">
+    <div id="color-palette">
+      <button class="color selected" class="selected"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
+      <button class="color"></button>
     </div>
-    <script src="script.js"></script>
+    <button id="clear-board">Limpar</button>
+    <div id="container">
+      <div id="pixel-board">
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(96, 120, 120);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: rgb(79, 62, 45);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(200, 166, 79);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: rgb(13, 115, 57);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: rgb(250, 222, 23);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: rgb(0, 112, 188);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: rgb(217, 173, 153);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: rgb(158, 166, 176);"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: black;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+        <div class="pixel" style="background-color: white;"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
